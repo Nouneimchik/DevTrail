@@ -1,0 +1,37 @@
+.body--conteiner {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background-color: #121212;
+    margin-top: auto;
+    top: 15px;
+}
+
+footer .logo{
+    margin: 5px 10px;
+}
+
+.footer--all .logo {
+    margin: 5px 45px;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p {
+    width: 80%;
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+}

@@ -1,0 +1,33 @@
+{
+  "role-based": [
+    "Frontend",
+    "Backend",
+    "DevOps",
+    "Full_Stack",
+    "Data_Analyst",
+    "AI_Engineer",
+    "Android",
+    "IOS",
+    "PostgreSQL",
+    "Blockchain",
+    "QA",
+    "Software_Architect",
+    "Cyber_Security",
+    "UX_Design",
+    "Game_Developer"
+  ],
+  "skill-based": [
+    "React",
+    "JavaScript",
+    "Node_js",
+    "SQL",
+    "Python",
+    "C++",
+    "PHP",
+    "Java"
+  ],
+  "projectIdeas": [
+    "React",
+    "JavaScript"
+  ]
+}

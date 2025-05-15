@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Вхід</h2>
+        <form id="registerForm" method="POST" action="/login">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Вхід</button>
+        </form>
+        <p>Ще не зареєстовані? <a href="register.html" id="openLogin">Зареєструватися</a></p>
+    </div>
+</body>
+</html>

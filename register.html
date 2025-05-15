@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="style/register.css">
+</head>
+<body>
+    <div class="register-container">
+        <h2>Реєстрація</h2>
+        <form id="registerForm" method="POST" action="/register">
+            <input type="text" name="username" placeholder="Ваше ім'я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Пароль" required>
+            <button type="submit">Зареєструватися</button>
+        </form>
+        <p>Вже маєте акаунт? <a href="login.html" id="openLogin">Увійти</a></p>
+    </div>
+
+    <script>
+        document.getElementById('registerForm').addEventListener('submit', async function(event) {
+            event.preventDefault(); // Зупиняємо стандартне надсилання форми
+        
+            const formData = new FormData(this);
+        
+            try {
+                const response = await fetch('/register', {
+                    method: 'POST',
+                    body: new URLSearchParams(formData) // Перетворюємо FormData у URL-формат
+                });
+        
+                const result = await response.text();
+        
+                alert(result); // Показуємо повідомлення з сервера
+                if (response.ok) {
+                    window.location.href = 'index.html'; // Переходимо на головну сторінку після реєстрації
+                }
+            } catch (error) {
+                console.error('Помилка при реєстрації:', error);
+                alert('Сталася помилка. Спробуйте ще раз.');
+            }
+        });
+    </script>
+</body>
+</html>

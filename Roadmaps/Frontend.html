@@ -1,0 +1,272 @@
+<div class="roadmaps--pages">
+<div class="roadmaps--navigation">
+</div>
+<div class="roadmaps--body">
+<h2 id="html">HTML</h2>
+<h3 id="html-overview">Огляд</h3>
+<p>HTML (Hypertext Markup Language) – це стандартна мова розмітки, яка використовується для створення структури та контенту веб-сторінок. Він становить основу кожної веб-сторінки, яку ви бачите в Інтернеті. HTML використовує теги для визначення структури та елементів у документі, що дозволяє браузерам інтерпретувати та відображати вміст належним чином.</p>
+<h3 id="html-concepts">Концепції для початківців</h3>
+<h4>Структура документа</h4>
+<p>HTML-документ структурується за допомогою HTML-тегів. Базова структура HTML-документа включає тег HTML, тег head і тег body.</p>
+<pre>
+<code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;title&gt;Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- The content of the website is written inside the body tag  --&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code>
+</pre>
+<h4>HTML-теги</h4>
+<p>HTML-документ структурується за допомогою HTML-тегів. Базова структура HTML-документа включає тег HTML, тег head і тег body.</p>
+<h4>Атрибути HTML</h4>
+<p>Атрибути є частиною тегів, яка надає додаткову інформацію елементам. Це може бути для конкретних елементів, таких як або для надання класу чи ідентифікаторів.&nbsp;<span>&lt;img&gt;</span>
+</p>
+<pre>
+<code class="language-html">&lt;p&gt; &lt;!-- opening tag  --&gt;
+The p tag defines a paragraph tag
+&lt;/p&gt; &lt;!-- closing tag  --&gt;
+&lt;!-- The src and alt are considered attributes --&gt;
+&lt;img src="" alt="" /&gt;
+&lt;!-- some tags can be self-closed using / before closing bracket --&gt;
+</code>
+</pre>
+<h4>Ресурси</h4>
+<p>MDN Web Docs та W3Schools – це ваші веб-сайти для перевірки будь-якої інформації, пов'язаної з HTML, CSS або JavaScript.</p>
+<ul>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Structuring_content" target="_blank">MDN Web Docs - Вступ до HTML</a>
+</li>
+<li>
+<a href="https://w3schoolsua.github.io/html/index.html#gsc.tab=0" target="_blank">W3Schools - Підручник HTML</a>
+</li>
+</ul>
+<h3 id="html-form">Форми</h3>
+<p>HTML-форми дозволяють користувачам вводити дані та надсилати їх на сервер. Це часто можна побачити на сторінках входу/реєстрації або на сторінках контактів. Ви можете створювати форми за допомогою тега та різних елементів керування форми, таких як введення тексту, прапорці, перемикачі, розкривні списки вибору та кнопки. Дані з форм можна обробляти за допомогою серверних технологій, таких як PHP або JavaScript. <span>&lt;form&gt;</span>
+</p>
+<pre>
+<code class="language-html">&lt;form action=""&gt;
+&lt;input type="text"&gt;
+&lt;label for=""&gt;Name&lt;/label&gt;
+&lt;/form&gt;
+</code>
+</pre>
+<h4>Ресурси</h4>
+<ul>
+<li>
+<a href="https://web.dev/learn/forms/" target="_blank">Web.dev: Вивчайте форми</a>
+</li>
+</ul>
+<h3 id="семантичний-html">Семантичний HTML</h3>
+<p>Семантичний HTML – це спосіб написання HTML, який наголошує на значенні контенту, а не на його поданні. Це досягається за рахунок використання HTML-тегів, які мають специфічні семантичні значення. <span>&lt;header&gt;&lt;footer&gt;&lt;nav&gt;&lt;section&gt;&lt;article&gt;&lt;aside&gt;&lt;/aside&gt;</span>
+</p>
+<p>Використовуючи ці теги, ви можете створити більш доступну та легко зрозумілу веб-сторінку, яка також краще оптимізована для пошукових систем. Крім того, використання семантичного HTML може полегшити підтримку та оновлення вашого коду, оскільки він є більш організованим і легшим для розуміння.</p>
+<p>Загалом, використання семантичного HTML є важливою найкращою практикою для будь-якого веб-розробника, який хоче створювати доступні, добре організовані та легко підтримувані веб-сторінки та програми.</p>
+<pre>
+<code class="language-html">&lt;!-- Do not write like this --&gt;
+&lt;div&gt;
+&lt;!-- navigation links --&gt;
+&lt;a href="/home"&gt;Home&lt;/a&gt;
+&lt;a href="/home"&gt;About&lt;/a&gt;
+&lt;a href="/home"&gt;Contact&lt;/a&gt;
+&lt;/div&gt;
+&lt;div&gt;
+&lt;!-- Main Content here --&gt;
+&lt;/div&gt;
+&lt;!-- The semantic approach --&gt;
+&lt;header&gt;
+&lt;nav&gt;
+&lt;ul&gt;
+&lt;!-- links --&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+&lt;!-- for all the main contents of the page --&gt;
+&lt;/main&gt;
+&lt;footer&gt;
+&lt;!-- footer  --&gt;
+&lt;/footer&gt;
+</code>
+</pre>
+<h4>Ресурси</h4>
+<ul>
+<li>
+<a href="https://cs.fyi/guide/writing-semantic-html" target="_blank">Керівництво по написанню семантичного HTML </a>
+</li>
+</ul>
+<h2 id="css">CSS</h2>
+<h3 id="огляд">Огляд</h3>
+<p>CSS – це мова таблиць стилів та одна з основних технологій у веб-розробці. Він використовується для дизайну HTML-сторінок, таких як макети, шрифти, колір, анімація та різні інші стилі. Таким чином, без CSS ваш сайт буде виглядати як звичайний звичайний документ Word.</p>
+<h3 id="концепції-для-початківців">Концепції для початківців</h3>
+<h4>Вбудований, внутрішній та зовнішній CSS</h4>
+<p>Існує три методи додавання стилів CSS на вашу HTML-сторінку. По-перше, вбудований стиль записується всередині тега HTML за допомогою атрибута style. Але це найменш рекомендований варіант, оскільки стилі є унікальними для цього конкретного елемента HTML. Другий варіант – це внутрішній CSS, де ви використовуєте тег всередині тега вашого HTML-документа. <span>&lt;style&gt;&lt;head&gt;</span>
+</p>
+<pre>
+<code class="language-html">&lt;head&gt;
+&lt;!-- Internal CSS example  --&gt;
+&lt;style&gt;
+h1 {
+color: gray;
+}
+&lt;/style&gt;
+&lt;!-- Link an external CSS file in a HTML document --&gt;
+&lt;link rel="stylesheet" href="styles.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;!-- Inline CSS example --&gt;
+&lt;h1 style="color: turquoise;"&gt;Heading Text&lt;/h1&gt;
+&lt;/body&gt;
+</code>
+</pre>
+<p>Для зовнішнього варіанту створюємо новий CSS-файл і пов'язуємо його з HTML-документом. Це найпоширеніший метод використання CSS, оскільки файл може бути пов'язаний з іншими документами, що робить стиль придатним для повторного використання.</p>
+<div class="description">
+<p>Браузер надає перевагу вбудованим стилям, потім внутрішнім стилям і, нарешті, зовнішнім стилям. Це означає, що будь-який стиль, що використовується за допомогою вбудованого методу, має пріоритет над будь-якими іншими стилями.</p>
+</div>
+<h4>Селектори</h4>
+<p>Щоб застосувати стиль, спочатку потрібно виділити елемент, якщо ви не використовуєте вбудований стиль. Існують різні способи використання селектора, і деякі з часто використовуваних - це селектор типів, селектор класів та селектор ідентифікаторів. Кожен селектор має свій власний метод визначення селектора, наприклад, селектор класу завжди починається з <span>.</span> , а id селектори починаються з . <span>. #</span>
+</p>
+<pre>
+<code class="language-css">/* Basic selectors */
+/* Universal selector */
+* {
+}
+/* Type selector */
+h1 {
+font-size: 30px
+}
+/* Class selector */
+.class-name {
+color: blue;
+}
+/* Id selector */
+#id-name {
+}
+/* Attribute selector */
+[attr] {
+}
+</code>
+</pre>
+<h4>Властивості і значення</h4>
+<p>Властивості використовуються для визначення візуальних характеристик виділених елементів, таких як встановлення розміру тексту або встановлення кольору тексту. У той час як значення використовуються для встановлення конкретних значень для вибраних властивостей. Як і в наведеному вище прикладі коду, встановлює колір будь-якого тексту в цьому класі на синій. <span>font-size color color: blue;</span>
+</p>
+<div class="description">
+<p>Використовуйте MDNWebDocs, W3Schools або довідкові веб-сайти CSS, щоб посилатися на ім'я та значення властивостей. Не відчувайте тиску, щоб запам'ятати кожну властивість.</p>
+</div>
+<h4>Модель коробки</h4>
+<p>CSS дозволяє керувати макетом елементів на веб-сторінці за допомогою моделі коробки, яка визначає, як елементи розташовані та розмірюються на сторінці. Використовуючи властивість or, ви можете бачити, що кожен вміст на сторінці поміщено в поле. Добре розуміння цієї концепції може полегшити процес проектування макета пізніше. Дізнайтеся більше про модель коробки від <a href="https://web.dev/learn/css/" target="_blank">web.dev</a>. <span>background-color border</span>
+</p>
+<h4>Ресурси</h4>
+<ul>
+<li>
+<a href="https://w3schoolsua.github.io/css/css_intro.html#gsc.tab=0" target="_blank">W3Schools - Вступ до CSS</a>
+</li>
+<li>
+<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS" target="_blank">MDNWebDocs - Вивчайте CSS</a>
+</li>
+<li>
+<a href="https://web.dev/learn/css/" target="_blank">Web.dev - Вивчайте CSS</a>
+</li>
+</ul>
+<h3 id="flexbox-і-grid-layout">Flexbox і Grid Layout</h3>
+<p>Визначення макета на веб-сторінці стало набагато простішим із впровадженням нових властивостей макета в останні роки. Використання методів верстки допомагає розташувати елементи на сторінці та з легкістю створювати складні макети.</p>
+<p>Існує два поширених прийоми планування; і. Ми можемо використовувати їх, використовуючи властивість. Flexbox обробляє макет сторінки в одному вимірі, тому елементи розміщуються або горизонтально, або вертикально. У той час як Grid призначений для двовимірних планувань. <span>flex grid display</span>
+</p>
+<p>Функція стилізації макета у двох вимірах означає, що існує більше властивостей для визначення макета, ніж Flexbox. Це може бути непосильним завданням для новачка, тому початок з Flexbox може бути кращим.</p>
+<div class="description">
+<p>Скористайтеся вкладкою макета в інспекторі браузера, яка візуалізує макет сторінки. Це може спростити процес проектування, особливо з компонуванням Grid.</p>
+</div>
+<h4>Ресурси</h4>
+<ul>
+<li>
+<a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">CSS-трюки - Повний посібник з Flexbox</a>
+</li>
+<li>
+<a href="https://flexboxfroggy.com/#uk" target="_blank">Flexbox Froggy</a> (гра для вивчення flexbox)</li>
+<li>
+<a href="https://css-tricks.com/snippets/css/complete-guide-grid/" target="_blank">CSS-трюки - Повний посібник з CSS Grid</a>
+</li>
+<li>
+<a href="https://cssgridgarden.com/#ua" target="_blank">Flexbox Froggy</a> (гра для вивчення та практики Grid)</li>
+</ul>
+<h3 id="адаптивний-веб-дизайн">Адаптивний веб-дизайн</h3>
+<p>Веб-сайт, який адаптується під різні пристрої та розміри екрану, вважається адаптивним веб-сайтом. CSS дозволяє розробникам створювати веб-сторінки, оптимізовані для різних пристроїв і розмірів екранів, використовуючи такі методи, як медіа-запити і гнучкі макети. Зі збільшенням кількості мобільних користувачів більшість веб-сайтів використовують підхід, орієнтований на мобільні пристрої.</p>
+<p>Перш за все, додавання метатегу viewport всередину вашого тегу дуже важливо для дизайну адаптивного веб-сайту. <span>&lt;head&gt;</span>
+</p>
+<pre>
+<code class="language-html">&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</code>
+</pre>
+<p>Він повідомляє браузеру, що ширина веб-сайту така ж, як ширина пристрою, і є рівнем масштабування, з яким завантажується веб-сторінка. <span>width=device-widthinitial-scale=1</span>
+</p>
+<p>Щоб застосувати стилі в різних розмірах екрана, ми використовуємо правила та вказуємо ширину екрана. У підході, орієнтованому на мобільні пристрої, ми пишемо стилі для екранів мобільних пристроїв та інші загальні стилі, а потім використовуємо медіазапити, щоб застосувати стилі до екранів більших розмірів. <span>@media</span>
+</p>
+<p>Інші методи включають використання відносних одиниць, таких як , , (ширина вікна перегляду) або (висота вікна перегляду) замість фіксованих пікселів (). Згадана раніше схема сітки або flexbox також дозволяє створювати гнучкі контейнери серед багатьох інших. <span>% em vw vh px</span>
+</p>
+<pre>
+<code class="language-css">/* Mobile styles and other
+general styles applicable for all screens */
+body {
+font-family: "Arial", sans-serif;
+color: #eeeeee;
+background: black;
+}
+nav {
+width: 100%;
+height: 100vh;
+background: #202123;
+}
+/* styles apply for screen sizes with a width of 768px or higher */
+@media (min-width: 768px) {
+nav {
+width: 60%;
+height: auto;
+}
+}
+/* styles apply for screen sizes with a width of 1024px or higher */
+@media (min-width: 1024px) {
+/* styles from the 768px rule also applies to this screen size */
+}
+</code>
+</pre>
+<h4>Ресурси</h4>
+<ul>
+<li>
+<a href="https://www.freecodecamp.org/ukrainian/learn/2022/responsive-web-design" target="_blank">FreeCodeCamp - адаптивний веб-дизайн</a>
+</li>
+</ul>
+<h3 id="анімації">Анімації</h3>
+<p>Окрім зміни макетів та кольорів, CSS можна використовувати для додавання анімації для створення більш візуально привабливих веб-сайтів. Найпростіший спосіб додати деякі невеликі ефекти - це властивість, яка обмежує, але може бути використана для створення плавних змін під час наведення курсору або сфокусованого стану. <span>transition</span>
+</p>
+<p>Щоб використовувати її, нам потрібно надати деякі властивості, які потрібні, щоб визначити, до якої властивості (колір, фон, трансформація або все) слід застосувати перехід, скільки часу потрібно для завершення переходу, а також визначити, як перехід відбувається протягом вказаного проміжку часу. Наприклад, використання застосує перехід лише до кольору елемента, і для повної зміни кольору знадобиться 0,4 секунди. Починається перехід повільно і поступово збільшує швидкість. Дізнайтеся більше за допомогою посібника від <a href="https://cssreference.io/transitions/#transition-property" target="_blank">CSSReference.io</a>. <span>transition transition-property transition-duration transition-timing-function transtion: color 0.4s ease-in ease-in</span>
+</p>
+<pre>
+<code class="language-css">/* Provide basic styling */
+button{
+width: 100px;
+height: 60px;
+background: rgb(49, 98, 172);
+/* "all" applies to color, background and transform property  */
+transition: all 0.4s ease-in;
+color: white;
+}
+/* When the button is hovered change background and scale the size by 1.1*/
+button:hover{
+background: rgb(21, 103, 82);
+transform: scale(1.1);
+}
+/* there's also an optional delay property */
+div{
+/* the transition will only start after the 1 sec has passed*/
+transition: all 0.4s ease-in-out 1s;
+}
+</code>
+</pre>
+<p>Але, має дуже просте використання і вимагає бути в стані, як або . Тому для створення більш складних анімацій ми використовуємо правило. Використовуючи ключові кадри, ми можемо визначити значення в різні періоди тривалості анімації. Визначення ключових кадрів схоже на те, але замість надання ширини, це те, що може бути будь-яким, яким ви хочете його бачити. Ключкадрам може бути надано будь-яке значення між to або та коли між ними немає змін. <span>transition :hover :active @keyframes @media animation-name 0% 100% from to</span>
+</p>
+<p>Щоб використовувати визначений ключовий кадр, ми використовуємо властивість у елементі, який ми хочемо, щоб анімація відбувалася, і використовуємо те саме для значення. Властивості in подібні до деяких додаткових, таких як визначення кількості повторень анімації, для напрямку анімації, а також для визначення стану елемента після завершення анімації. <span>animation animation-name animation transition animation-iteration-count animation-direction animation-fill-mode</span>
+</p>
+</div>
+</div>
