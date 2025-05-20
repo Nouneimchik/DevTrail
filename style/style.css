@@ -549,7 +549,7 @@ body html {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    max-width: 1860px;
+    max-width: 1830px;
 }
 
 .specializations .specialBlock {
@@ -607,4 +607,16 @@ body html {
     font-weight: 400;
     font-size: 32px;
     margin: 25px 0;
+}
+
+@media(max-width: 1899px) {
+    .specializations {
+        width: 1220px;
+    }
+}
+
+@media(max-width: 1279px){
+    .specializations {
+        width: 580px;
+    }
 }
